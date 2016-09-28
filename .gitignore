@@ -2,3 +2,5 @@
 /target/
 /.classpath
 /.project
+Package.sh
+Test.sh
