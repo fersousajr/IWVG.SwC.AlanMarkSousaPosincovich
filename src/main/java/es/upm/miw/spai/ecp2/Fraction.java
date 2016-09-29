@@ -60,4 +60,10 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction mult(Fraction fraction){
+    	int numeratorResult=this.numerator*fraction.getNumerator();
+    	int denominatorResult=this.denominator*fraction.getDenominator();
+    	return new Fraction(numeratorResult, denominatorResult);
+    }
+    
 }
