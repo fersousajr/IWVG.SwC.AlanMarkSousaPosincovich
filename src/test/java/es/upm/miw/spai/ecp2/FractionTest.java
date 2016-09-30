@@ -42,6 +42,7 @@ public class FractionTest {
         assertEquals(2.0/3, fraction.decimal(), 10e-5);
     }
 
+    @Test
     public final void testIsEquivalent() {
     	Fraction f2 = new Fraction(6, 9);
     	assertTrue(fraction.isEquivalent(f2));
