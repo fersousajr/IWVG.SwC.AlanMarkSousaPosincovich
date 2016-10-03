@@ -50,4 +50,12 @@ public class FractionTest {
     	f2 = new Fraction(5, 3);
     	assertFalse(fraction.isEquivalent(f2));
     }
+    
+    @Test
+    public final void testDiv() {
+    	Fraction divisor = new Fraction(2, 6);
+    	Fraction quotient = fraction.div(divisor);
+        assertEquals(12, quotient.getNumerator(), 10e-5);
+        assertEquals(6, quotient.getDenominator(), 10e-5);
+    }
 }
