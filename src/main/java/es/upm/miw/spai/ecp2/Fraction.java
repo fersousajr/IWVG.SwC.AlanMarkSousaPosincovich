@@ -64,10 +64,4 @@ public class Fraction {
     	return ((this.numerator * f.getDenominator()) == (this.denominator * f.getNumerator()));
     }
     
-    public Fraction mult(Fraction fraction){
-    	int numeratorResult=this.numerator*fraction.getNumerator();
-    	int denominatorResult=this.denominator*fraction.getDenominator();
-    	return new Fraction(numeratorResult, denominatorResult);
-    }
-    
 }
