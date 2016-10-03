@@ -50,4 +50,11 @@ public class FractionTest {
     	f2 = new Fraction(5, 3);
     	assertFalse(fraction.isEquivalent(f2));
     }
+    
+    @Test
+    public final void testMult(){
+    	Fraction resultFraction=fraction.mult(new Fraction(2,3));
+    	assertEquals(4,resultFraction.getNumerator());
+    	assertEquals(9,resultFraction.getDenominator());
+    }
 }
