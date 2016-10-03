@@ -34,5 +34,11 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double mean() {
+    	double mean = 0;
+    	mean = this.sum()/this.size();
+    	return mean;
+    }
 
 }
