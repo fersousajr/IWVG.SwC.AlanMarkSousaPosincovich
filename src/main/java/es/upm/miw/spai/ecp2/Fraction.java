@@ -70,5 +70,10 @@ public class Fraction {
         Fraction quotient = new Fraction(resultedNumerator, resultedDenominator);
         return quotient;
     }
+    public Fraction mult(Fraction fraction){
+    	int numeratorResult=this.numerator*fraction.getNumerator();
+    	int denominatorResult=this.denominator*fraction.getDenominator();
+    	return new Fraction(numeratorResult, denominatorResult);
+    }
     
 }

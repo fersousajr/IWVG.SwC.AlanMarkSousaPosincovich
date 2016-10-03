@@ -58,4 +58,11 @@ public class FractionTest {
         assertEquals(12, quotient.getNumerator(), 10e-5);
         assertEquals(6, quotient.getDenominator(), 10e-5);
     }
+    @Test
+    public final void testMult(){
+    	Fraction resultFraction=fraction.mult(new Fraction(2,3));
+    	assertEquals(4,resultFraction.getNumerator());
+    	assertEquals(9,resultFraction.getDenominator());
+    }
+    
 }
