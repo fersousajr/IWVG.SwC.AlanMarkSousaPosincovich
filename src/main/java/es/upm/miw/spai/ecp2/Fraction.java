@@ -64,4 +64,11 @@ public class Fraction {
     	return ((this.numerator * f.getDenominator()) == (this.denominator * f.getNumerator()));
     }
     
+    public Fraction div(Fraction f) {
+    	int resultedNumerator = numerator * f.getDenominator();
+    	int resultedDenominator = denominator * f.getNumerator();
+        Fraction quotient = new Fraction(resultedNumerator, resultedDenominator);
+        return quotient;
+    }
+    
 }
